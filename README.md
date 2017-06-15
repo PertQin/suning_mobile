@@ -1,4 +1,5 @@
-### 使用技术栈  
+## 项目简介
+  - 本项目较为完整地了一套苏宁易购web移动端购物流程
   - 动态计算rem，使网页兼容各移动端浏览器
   - 用less编写高效清晰的css代码 
   - 百分比布局、flex布局、媒体查询 
@@ -6,9 +7,12 @@
   - 依赖zepto.js、swiper、iscroll等移动端常见库开发
   - 利用Ajax技术对DOM异步加载、登录注册验证 
   - 用nodeJs提供登录注册验证接口 
-  - 使用animate.css提升体验
+  	- 打开命令窗口，输入 `node app.js` 开启服务
+  	- 服务监听3000端口
+  - 增加了对html5新标签的使用
+  - 利用animate.css、css3提升体验
   - 对页面的加载的处理 
-  	+ 图片：使用第三方loadLazy.js对楼层图片懒加载
+  	+ 图片：使用第三方loadLazy.js插件对楼层图片懒加载
   	+ 减少HTTP请求，使用gulp对js、css打包合并，对图片等静态资源压缩
 
 #### 首页 
@@ -62,6 +66,9 @@
 #### 登录注册页
 - zepto+Ajax+正则 验证登录注册 √
 - 验证码倒计时 √
+- sessionStorage记录账户 √
 - 第三方登录 √
  
 ![](http://i1.piimg.com/519918/60b9a20197eb410a.png)
+![](https://ooo.0o0.ooo/2017/06/15/5942355d7e70a.png)
+![](https://ooo.0o0.ooo/2017/06/15/594235f7391ac.png)
