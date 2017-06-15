@@ -13,8 +13,9 @@
   - 增加了对html5新标签的使用
   - 利用animate.css、css3提升体验
   - 对页面的加载的处理 
-  	+ 图片：使用第三方loadLazy.js插件对楼层图片懒加载,用webpjs使webp格式的图片兼容不同浏览器
+  	+ 图片：使用第三方loadLazy.js插件对楼层图片懒加载,用webpjs使webp格式的图片兼容不同浏览器、背景图设置background-size，普通图片设置宽高
   	+ 减少HTTP请求，使用gulp对js、css打包合并，对图片等静态资源压缩
+
 
 #### 首页 
  - 搜索框渐变 √
@@ -53,7 +54,10 @@
 ![](http://i4.buimg.com/519918/ad61dcdf1d3ef844.png)
 
 #### 品牌页
-- zepto+iScroll加载特效 √
+- zepto+iScroll+ajax上拉加载数据 √
+  + 构建了brand.json文件，模拟后台数据
+  + 利用IScroll的scrollStart、scroll、scrollEnd三个事件切换提示动画
+  + 通过ajax从后台请求过来数据，拼凑模板，渲染到页面上。
 
 ![](http://i1.piimg.com/519918/db3e1b7e01d11aa6.png)
 
