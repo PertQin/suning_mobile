@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>登录</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <!--<script>
+  // 横竖屏监听
+  setRem();
+  window.addEventListener('orientationchange',setRem)
+  function setRem(){
+    var html = document.querySelector('html');
+    var width = html.getBoundingClientRect().width;
+    html.style.fontSize = width /16+"px";
+    console.log(html.style.fontSize);
+  }
+  </script>-->
+</head>
+<body>
+   <div class="main">
+        <!-- 页面主题:登录 -->
+        <div class="nav">
+            <div class="nav-back">
+               <a href="#" class="nav-btn-back"></a>
+            </div>
+            <div class="nav-theme">
+                登录
+            </div>
+        </div>
+        <!-- 功能分类 -->
+        <ul class="login-reg">
+           <li class="current">
+               <a href="#">账号密码登录</a>
+           </li>
+           <li>
+              <a href="#">手机验证登录</a>
+           </li>
+        </ul>
+        <!-- 功能详细 -->
+        <div class="functional-detail">
+            <form action="">
+                 <!-- 账号 -->
+                 <div class="username">
+                    <span>账&nbsp;&nbsp;&nbsp;&nbsp;号</span>
+                    <div class="form-input">
+                       <input type="text" id="username" name="username" value placeholder="手机号/邮箱/用户名/门店会员卡">
+                    </div>
+                 </div>
+                 <!-- 密码 -->
+                 <div class="password">
+                    <span>密&nbsp;&nbsp;&nbsp;&nbsp;码</span>
+                    <div class="form-input">
+                      <input type="text" id="password" name="username" value placeholder="请输入6-20位易购密码">
+                    </div>
+                    <div class="icon-eye-close"></div>
+                 </div>
+            </form>
+            <span class="error_tip">错误提示</span>
+        </div>
+        <!-- 登录button -->
+        <div class="login-button">登录</div>
+        <!-- 登录服务 -->
+        <div class="login-serve">
+            <div class="serve-container">
+                <a href="#" class="mendian">门店卡登录</a>
+                <a href="#" class="forget-pwd">忘记密码?</a>
+            </div>
+        </div>
+        <!-- 快速注册 -->
+        <div class="ks-register">
+          <a href="./register.html">快速注册</a>
+        </div>
+   </div>
+   <!-- 第三方登录 -->
+   <div class="other-login">
+        <div class="title">
+            <div class="main-content">
+                <span class="left"></span>
+                <div class="detail">其他方式登录</div>
+                <span class="right"></span>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <i class="qq"></i>
+                <span>QQ</span>
+            </li>
+            <li>
+                <i class="yfb"></i>
+                <span>易付宝</span>
+            </li>
+        </ul>
+   </div>
+
+   <script src="./lib/zepto/dist/zepto.min.js"></script>
+   <script src="./lib/zepto/src/touch.js"></script>
+   <script src="./js/login.js"></script>
+</body>
+</html>

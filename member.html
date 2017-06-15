@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>会员中心</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/member.css">
+  <script>
+  // 横竖屏监听
+  setRem();
+  window.addEventListener('orientationchange',setRem)
+  function setRem(){
+    var html = document.querySelector('html');
+    var width = html.getBoundingClientRect().width;
+    html.style.fontSize = width /16+"px";
+    console.log(html.style.fontSize);
+  }
+  </script>
+</head>
+<body>
+        <!-- 页面头部 -->
+        <header class="header">
+            <!-- 页面主题:会员中心 -->
+            <div class="nav">
+                <div class="nav-back">
+                  <a href="#" class="nav-btn-back"></a>
+                </div>
+                <div class="nav-theme">
+                    我的易购
+                </div>
+                <div class="more">
+                  <img src="./images/more.png" alt="">
+                </div>
+            </div>
+            <!-- 用户信息背景 -->
+            <div class="infor-bg"></div>
+            <!-- 用户信息 -->
+            <div class="member-infor">
+               <img src="./images/qiqiu.png" alt="" class="qiqiu-animate">
+                <div class="touxiang">
+                    <a href="#" class="bg-container">
+                      <img src="./images/0000000000_01_60x60.jpg" alt="">
+                    </a>
+                </div>
+                <div class="infor">
+                  <p>
+                    <span id="username" class="tel">137******69</span>
+                    <span class="lv"></span>
+                  </p>
+                  <!-- 云钻和地址 -->
+                  <p class="yzdz">我的云钻:<span class="yunzuan">0</span>
+                      <span class="address">地址.账户管理</span> 
+                  </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- 订单 -->
+        <div class="my-order">
+           <span class="all">全部订单</span>
+           <span class="show-all">查看全部订单</span>
+        </div>
+
+        <!-- 售后  -->
+        <div class="customer-serve">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="./images/order-dzf.png" alt="">
+                  <span>待支付</span>
+                </a>
+              </li>
+               <li>
+                <a href="#">
+                  <img src="./images/order-dsh.png" alt="">
+                  <span>待收货</span>
+                </a>
+              </li>
+               <li>
+                <a href="#">
+                  <img src="./images/order-dpj.png" alt="">
+                  <span>待评价</span>
+                </a>
+              </li>
+               <li>
+                <a href="#">
+                  <img src="./images/order-thh.png" alt="">
+                  <span>退休/维修</span>
+                </a>
+              </li>
+            </ul>
+        </div>
+
+        <!-- 隔层 -->
+        <div class="gap"></div>
+        
+        <!-- 财务管理 -->
+        <div class="cwgl">
+            <div class="big-left">
+                <a href="#">
+                    <img src="./images/quan.png" alt="">
+                    <span>优惠券</span>
+                </a>
+            </div>
+            <div class="more-right">
+                <ul>
+                  <li>
+                    <a href="#">
+                       <p class="xiaohuang">去开通</p>
+                       <p>任性付</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                       <p class="xiaohong">0</p>
+                       <p>领云钻</p>
+                    </a>
+                  </li>
+                   <li>
+                    <a href="#">
+                       <p class="xiaohuang">理财高收益</p>
+                       <p>安心理财</p>
+                    </a>
+                  </li>
+                   <li>
+                    <a href="#">
+                       <p class="xiaohui">立即转入</p>
+                       <p>我的零钱宝</p>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 隔层 -->
+        <div class="gap"></div>
+
+        <!-- 其他服务 -->
+        <div class="other-serve">
+            <ul>
+                <li>
+                  <a href="#">
+                    <p class="img"></p>
+                    <p class="desc">商品收藏</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="img dp"></p>
+                    <p class="desc">店铺收藏</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="img zj"></p>
+                    <p class="desc">足迹</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="img jy"></p>
+                    <p class="desc">功能建议</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="img qd"></p>
+                    <p class="desc">必抢清单</p>
+                  </a>
+                </li>
+                 <li>
+                  <a href="#">
+                    <p class="img pg"></p>
+                    <p class="desc">9.9拼购</p>
+                  </a>
+                </li>
+                 <li>
+                  <a href="#">
+                    <p class="img xy"></p>
+                    <p class="desc">校园VIP</p>
+                  </a>
+                </li>
+                 <li>
+                  <a href="#">
+                    <p class="img active"></p>
+                    <p class="desc">我的活动</p>
+                  </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 隔层 -->
+        <div class="gap"></div>
+
+        <!-- 猜你喜欢 -->
+        <div class="cnxh">
+          <div class="cnxh-nav clear">
+             <span class="cnxh-title">猜你喜欢</span>
+             <span class="hyh">换一换</span>
+          </div>
+          <ul class="product-list clear">
+              <li>
+                <a href="#">
+                    <img src="./images/0000000000-000000000131155602_1.jpg" alt="">
+                    <p class="title">五羊 婴儿抑菌洗衣皂 80g</p>
+                    <span class="price">¥ 2.50</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                    <img src="./images/0000000000-000000000131225835_1.jpg" alt="">
+                    <p class="title">宝宝专用衣物清洁剂补充装</p>
+                    <span class="price">¥ 11.90</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                    <img src="./images/0000000000-000000000131124407_1.jpg" alt="">
+                    <p class="title">亲亲我(kidsme) 婴儿亲肤芦荟湿巾80片装</p>
+                    <span class="price">¥ 6.20</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                    <img src="./images/0000000000-000000000131155602_1.jpg" alt="">
+                    <p class="title">五羊 婴儿抑菌洗衣皂 80g</p>
+                    <span class="price">¥ 2.50</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                    <img src="./images/0000000000-000000000131155602_1.jpg" alt="">
+                    <p class="title">五羊 婴儿抑菌洗衣皂 80g</p>
+                    <span class="price">¥ 2.50</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                    <img src="./images/0000000000-000000000131155602_1.jpg" alt="">
+                    <p class="title">五羊 婴儿抑菌洗衣皂 80g</p>
+                    <span class="price">¥ 2.50</span>
+                </a>
+              </li>
+          </ul>
+        </div>
+
+        <!-- 退出 -->
+        <div class="exit">
+            <span class="wrap">退出</span>
+        </div>
+
+        <script> 
+           var user = document.getElementById('username');
+           user.innerHTML = sessionStorage.getItem('username');
+        </script>
+</body>
+</html>
+
+
+    
+
+
+           

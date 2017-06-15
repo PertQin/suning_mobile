@@ -1,0 +1,268 @@
+html{font-size: 50px;}body{font-size: 24px;}
+@media screen and (min-width:320px){html{font-size:25px}body{font-size:12px}}
+@media screen and (min-width:360px){html{font-size:25px}body{font-size:12px}}
+@media screen and (min-width:375px){html{font-size:25px}body{font-size:12px}}
+@media screen and (min-width:384px){html{font-size:25.6px}body{font-size:14px}}
+@media screen and (min-width:400px){html{font-size:26.67px}body{font-size:14px}}
+@media screen and (min-width:414px){html{font-size:27.6px}body{font-size:14px}}
+@media screen and (min-width:424px){html{font-size:28.27px}body{font-size:14px}}
+@media screen and (min-width:480px){html{font-size:32px}body{font-size:15.36px}}
+@media screen and (min-width:540px){html{font-size:36px}body{font-size:17.28px}}
+@media screen and (min-width:720px){html{font-size:48px}body{font-size:23.04px}}
+@media screen and (min-width:750px){html{font-size:50px}body{font-size:24px}}
+
+
+@rem:48rem;
+body{
+  background: #fff;
+}
+.main{
+
+}
+
+
+
+/* 功能分类 */
+.login-reg{
+  width: 100%;
+  height: 99/@rem;
+  border-bottom: 1px solid #dcdcdc; 
+  text-align: center;
+
+  li{
+    width: 50%;
+    height: 100%;
+    float: left;
+    
+    a{
+      display: inline-block;
+      text-align: center;
+      color:#9d9d9d;
+      font-size: 28.8/@rem;
+      width: 180/@rem;
+      height: 93/@rem;
+      line-height: 99/@rem;
+    }
+  }
+  li.current a{
+    color:#222530;
+    border-bottom: 6/@rem solid #f60;   
+  }
+}
+
+/* 功能详细 */
+.functional-detail{
+  padding: 96/@rem 28/@rem 59/@rem;
+  position: relative;
+
+  form{
+    display: block;
+    width: 100%;
+    height: 179/@rem;
+
+    .username,.password{
+      width: 100%;
+      height: 87/@rem;
+      border-bottom: 1px solid #dddddd;
+      line-height: 87/@rem;
+      position: relative;
+
+    .icon-eye-close{
+      width: 1rem;
+      height: 1.6rem;
+      margin-top:0.1rem;
+      background: url('../images/eye.png') no-repeat;
+      background-size:contain;
+      position: absolute;
+      right: 0;
+      top:0;
+    }
+      span{
+        display: block;
+        text-align: center;
+        color:#222530;
+        font-size:28.8/@rem;
+        width: 96/@rem;
+      }
+
+      .form-input{
+         width: 435/@rem;
+         height: 100%;
+         position: absolute;
+         left:160/@rem;
+         top:0;
+         line-height: 90/@rem;
+
+         input{
+           width: 100%;
+           /* js控制获取焦点变色  color:#222530; */
+           color:#222530; 
+           background: #fff;
+           font-size: 27/@rem;
+         }
+         input::-webkit-input-placeholder { /* WebKit browsers */
+            color: #cacaca;
+         }
+        input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color: #999;
+         }
+         input::-moz-placeholder { /* Mozilla Firefox 19+ */
+              color: #999;
+          }
+          input::-ms-input-placeholder { /* Internet Explorer 10+ */
+              color: #999;
+          }
+      }
+    }
+  }
+  .error_tip {
+    position: absolute;
+    left: 28/@rem;
+    bottom: 15/@rem;
+    text-align: center;
+    width: 90%;
+    color: red;
+    display: none;
+  }
+}
+
+
+/* 登录button */
+.login-button{
+  margin:0 auto 0;
+  width: 90%;
+  height: 80/@rem;
+  background: #ff6600;
+  color:#fff;
+  font-size: 0.6rem;
+  text-align: center;
+  line-height: 80/@rem;
+  border-radius: 0.16rem;
+  -webkit-border-radius:0.16rem;
+}
+
+/* 登录服务 */
+.login-serve{
+  width: 100%;
+  height: 94/@rem;
+  line-height: 94/@rem;
+
+  .serve-container{
+    margin:0 auto;
+    width: 90%;
+    height: 100%;
+
+    a{
+      display: block;
+      height: 100%;
+      text-align: center;
+      font-size:0.48rem;
+      float: right;
+      color: #222530;
+    }
+    .mendian{
+      float: left;
+      color: #f60;
+    }
+  }
+}
+
+/*  快速注册  */
+.ks-register{
+  width: 100%;
+  height: 82/@rem;
+  text-align: center;
+  line-height: 82/@rem;
+
+  a{
+    display: inline-block;
+    width: 221/@rem;
+    height: 60/@rem;
+    line-height: 60/@rem;
+    border:1px solid #ff6600;
+    color:#ff6600;
+    border-radius: 0.16rem;
+  }
+}
+
+/*  第三方登录 */
+.other-login{
+  width: 100%;
+  height: 243/@rem; 
+  position: relative;
+  top:175/@rem;
+  left:0;
+
+  .title{
+    padding:73/@rem 28/@rem 0;
+
+    .main-content{
+       width: 100%;
+       height: 35/@rem;
+       text-align: center;
+       position: relative;
+
+       span{
+          display: block;
+          width: 235/@rem;
+          height: 1px; 
+          background: #dddddd;
+          position: absolute;
+          top:13.75/@rem;
+       }
+       .left{
+          left:0;
+       }
+       .right{
+         right: 0;
+       }
+
+       .detail{
+         padding:0 32/@rem;
+         height: 100%;
+         display: inline-block;
+         background: #fff;
+         color: #999999;
+       }
+    }
+  }
+
+  ul{
+    width: 90%;
+    margin: 10/@rem auto 0;
+    height: 100/@rem;
+    text-align: center;
+    
+    li{
+      display: inline-block;
+      width: 25%;
+
+      i{
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        margin: 0 auto;
+      }
+      .qq{
+        background: url('../images/qq.png') no-repeat;
+        background-size: contain;
+      }
+      .yfb{
+        background: url('../images/yfb.png') no-repeat;
+        background-size: contain;
+      }
+      span{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 0.2rem;
+      }
+    }
+  }
+}
+
+
+input[type=password] {
+  border: none;
+  -webkit-appearance: none;
+}

@@ -1,0 +1,311 @@
+body {
+  position: relative;
+}
+#wrapper {
+  position: absolute;
+  left: 0;
+  top: 1.83333333rem;
+  width: 100%;
+  bottom: 48px;
+  z-index: 10;
+  overflow: hidden;
+}
+.su-layout {
+  overflow: hidden;
+}
+/* 搜索框 */
+.search-wrap {
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 0 1px 1px #DCDCDC;
+}
+.search-wrap .search-bar input {
+  width: 11.25rem;
+  background: #eeeeee;
+  border-color: #eeeeee;
+  border-radius: 0.0625rem;
+}
+.search-wrap .search-bar input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #757575;
+}
+.search-wrap .search-bar input::-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #757575;
+}
+.search-wrap .search-bar input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #757575;
+}
+.search-wrap .search-bar input::-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #757575;
+}
+.search-wrap .sx {
+  width: 1.375rem;
+  height: 1.83333333rem;
+  padding-right: 0.16666667rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.6rem;
+  line-height: 1.83333333rem;
+  color: #353d44;
+}
+.reslut-wrap {
+  position: relative;
+}
+/* 综合分类 */
+.zhfl {
+  width: 100%;
+  height: 1.625rem;
+  border-bottom: 1px solid  #dddddd;
+  line-height: 1.625rem;
+  text-align: center;
+}
+.zhfl ul {
+  width: 100%;
+  height: 100%;
+}
+.zhfl ul li {
+  width: 25%;
+  height: 100%;
+  font-size: 0.56rem;
+  position: relative;
+  float: left;
+}
+.zhfl ul li i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.zhfl ul li i.zh::after {
+  content: "";
+  display: block;
+  width: 0.3125rem;
+  height: 0.3125rem;
+  border-right: 1px solid #b7b7b7;
+  border-bottom: 1px solid #b7b7b7;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 0.83333333rem;
+  top: 30%;
+}
+.zhfl ul li i.gouxuan::after {
+  content: "";
+  display: inline-block;
+  width: 0.625rem;
+  height: 0.625rem;
+  border: 1px solid #b7b7b7;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-left: 0.20833333rem;
+}
+.zhfl ul li::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 0.83333333rem;
+  background: #dddddd;
+  position: absolute;
+  right: -1px;
+  top: 50%;
+  margin-top: -0.41666667rem;
+}
+.zhfl ul li.cur {
+  color: #f60;
+}
+.zhfl ul li.cur i.gouxuan::after {
+  border-color: #f60;
+  background: #f60 url('../images/check.png') center center no-repeat;
+  background-size: 80%;
+}
+/* 商品展示  */
+.pro-show {
+  width: 100%;
+}
+.pro-show ul {
+  width: 100%;
+}
+.pro-show ul li {
+  width: 14.85416667rem;
+  height: 5.27083333rem;
+  margin: 0.39583333rem 0.5625rem;
+  float: left;
+}
+.pro-show ul li .img {
+  margin-right: 0.41666667rem;
+  width: 4.16666667rem;
+  height: 4.16666667rem;
+  float: left;
+  position: relative;
+}
+.pro-show ul li .img img {
+  width: 100%;
+  height: 100%;
+}
+.pro-show ul li .img .yuding {
+  width: 1.45833333rem;
+  height: 1.45833333rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url('../images/300765145519631715113000_13.png') no-repeat;
+  background-size: 1.45833333rem 1.45833333rem;
+}
+.pro-show ul li .desc {
+  width: 9.6875rem;
+  height: 5.625rem;
+  border-bottom: 1px solid #ddd;
+  float: left;
+}
+.pro-show ul li .desc .name {
+  height: 1.45833333rem;
+  color: #333;
+  font-size: 0.52rem;
+  line-height: 0.72916667rem;
+  /* 当文字内容超出,会用...隐藏  */
+  text-overflow: ellipsis;
+  word-break: break-all;
+  margin-bottom: 0.16666667rem;
+}
+.pro-show ul li .desc .name .product-label {
+  display: inline-block;
+  font-size: 0.5rem;
+  line-height: 0.5rem;
+  border: 1px solid #f60;
+  color: #f60;
+  position: relative;
+  top: 1px;
+  padding: 2px 0.06rem 1px;
+  margin: 1px 0.1rem 0 0;
+}
+.pro-show ul li .desc .infor-label {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 0.83333333rem;
+  margin-bottom: 0.41666667rem;
+  line-height: 0.58333333rem;
+}
+.pro-show ul li .desc .infor-label i {
+  border: 1px solid #999;
+  border-radius: 2px;
+  color: #999;
+  font-size: 0.5rem;
+  display: inline-block;
+  padding: 0.08333333rem 0.0625rem 0.04166667rem;
+}
+.pro-show ul li .desc .price {
+  position: relative;
+  height: 2.625rem;
+  padding-bottom: 0.41666667rem;
+  padding-top: 0.08333333rem;
+  overflow: hidden;
+}
+.pro-show ul li .desc .price .price-box {
+  width: 100%;
+  height: 0.875rem;
+  line-height: 0.875rem;
+}
+.pro-show ul li .desc .price .price-box .price-txt {
+  font-size: 0.48rem;
+  line-height: normal;
+  color: #f40;
+}
+.pro-show ul li .desc .price .price-box .price-txt strong {
+  font-size: 0.68rem;
+  font-weight: normal;
+}
+.pro-show ul li .desc .price .price-box .product-label {
+  margin-left: 5px;
+  height: 0.60416667rem;
+  background: #ff6600;
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 0.04166667rem 0.04166667rem 0;
+  position: relative;
+  top: -0.0625rem;
+}
+.pro-show ul li .desc .shop-num {
+  display: block;
+  font-size: 0.5rem;
+  line-height: 0.58333333rem;
+  height: 0.625rem;
+  margin-top: 0.29166667rem;
+  overflow: hidden;
+}
+.pro-show ul li .desc .shop-num i {
+  color: #999;
+  margin-right: 0.5rem;
+}
+.pro-show ul li .desc .sale {
+  margin-top: 0.0625rem;
+  display: block;
+  font-size: 0.5rem;
+  line-height: 0.58333333rem;
+  height: 0.625rem;
+  overflow: hidden;
+  color: #999;
+}
+/* 苏宁欢迎您 */
+.sn_hy {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  background: #f60;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 48px;
+}
+#pullUp {
+  background: #fff;
+  height: 40px;
+  line-height: 40px;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+  font-weight: 400;
+  font-size: 14px;
+  color: #888;
+}
+#pullUp .pullUpIcon {
+  display: block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: url('../images/pull-icon@2x.png') 0 0 no-repeat;
+  -webkit-background-size: 40px 80px;
+  background-size: 40px 80px;
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 250ms;
+}
+#pullUp .pullUpIcon {
+  -webkit-transform: rotate(-180deg) translateZ(0);
+}
+#pullUp.loading .pullUpIcon {
+  background-position: 0 100%;
+  -webkit-transform: rotate(0deg) translateZ(0);
+  -webkit-transition-duration: 0ms;
+  -webkit-animation-name: loading;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg) translateZ(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateZ(0);
+  }
+}
+#pullUp.flip .pullUpIcon {
+  -webkit-transform: rotate(0deg) translateZ(0);
+}

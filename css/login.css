@@ -1,0 +1,329 @@
+html {
+  font-size: 50px;
+}
+body {
+  font-size: 24px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 25px;
+  }
+  body {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 25px;
+  }
+  body {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+  body {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+  body {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.67px;
+  }
+  body {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+  body {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.27px;
+  }
+  body {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+  body {
+    font-size: 15.36px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+  body {
+    font-size: 17.28px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+  body {
+    font-size: 23.04px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+  body {
+    font-size: 24px;
+  }
+}
+body {
+  background: #fff;
+}
+/* 功能分类 */
+.login-reg {
+  width: 100%;
+  height: 2.0625rem;
+  border-bottom: 1px solid #dcdcdc;
+  text-align: center;
+}
+.login-reg li {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.login-reg li a {
+  display: inline-block;
+  text-align: center;
+  color: #9d9d9d;
+  font-size: 0.6rem;
+  width: 3.75rem;
+  height: 1.9375rem;
+  line-height: 2.0625rem;
+}
+.login-reg li.current a {
+  color: #222530;
+  border-bottom: 0.125rem solid #f60;
+}
+/* 功能详细 */
+.functional-detail {
+  padding: 2rem 0.58333333rem 1.22916667rem;
+  position: relative;
+}
+.functional-detail form {
+  display: block;
+  width: 100%;
+  height: 3.72916667rem;
+}
+.functional-detail form .username,
+.functional-detail form .password {
+  width: 100%;
+  height: 1.8125rem;
+  border-bottom: 1px solid #dddddd;
+  line-height: 1.8125rem;
+  position: relative;
+}
+.functional-detail form .username .icon-eye-close,
+.functional-detail form .password .icon-eye-close {
+  width: 1rem;
+  height: 1.6rem;
+  margin-top: 0.1rem;
+  background: url('../images/eye.png') no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.functional-detail form .username span,
+.functional-detail form .password span {
+  display: block;
+  text-align: center;
+  color: #222530;
+  font-size: 0.6rem;
+  width: 2rem;
+}
+.functional-detail form .username .form-input,
+.functional-detail form .password .form-input {
+  width: 9.0625rem;
+  height: 100%;
+  position: absolute;
+  left: 3.33333333rem;
+  top: 0;
+  line-height: 1.875rem;
+}
+.functional-detail form .username .form-input input,
+.functional-detail form .password .form-input input {
+  width: 100%;
+  /* js控制获取焦点变色  color:#222530; */
+  color: #222530;
+  background: #fff;
+  font-size: 0.5625rem;
+}
+.functional-detail form .username .form-input input::-webkit-input-placeholder,
+.functional-detail form .password .form-input input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #cacaca;
+}
+.functional-detail form .username .form-input input::-moz-placeholder,
+.functional-detail form .password .form-input input::-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #999;
+}
+.functional-detail form .username .form-input input::-moz-placeholder,
+.functional-detail form .password .form-input input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999;
+}
+.functional-detail form .username .form-input input::-ms-input-placeholder,
+.functional-detail form .password .form-input input::-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #999;
+}
+.functional-detail .error_tip {
+  position: absolute;
+  left: 0.58333333rem;
+  bottom: 0.3125rem;
+  text-align: center;
+  width: 90%;
+  color: red;
+  display: none;
+}
+/* 登录button */
+.login-button {
+  margin: 0 auto 0;
+  width: 90%;
+  height: 1.66666667rem;
+  background: #ff6600;
+  color: #fff;
+  font-size: 0.6rem;
+  text-align: center;
+  line-height: 1.66666667rem;
+  border-radius: 0.16rem;
+  -webkit-border-radius: 0.16rem;
+}
+/* 登录服务 */
+.login-serve {
+  width: 100%;
+  height: 1.95833333rem;
+  line-height: 1.95833333rem;
+}
+.login-serve .serve-container {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+}
+.login-serve .serve-container a {
+  display: block;
+  height: 100%;
+  text-align: center;
+  font-size: 0.48rem;
+  float: right;
+  color: #222530;
+}
+.login-serve .serve-container .mendian {
+  float: left;
+  color: #f60;
+}
+/*  快速注册  */
+.ks-register {
+  width: 100%;
+  height: 1.70833333rem;
+  text-align: center;
+  line-height: 1.70833333rem;
+}
+.ks-register a {
+  display: inline-block;
+  width: 4.60416667rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  border: 1px solid #ff6600;
+  color: #ff6600;
+  border-radius: 0.16rem;
+}
+/*  第三方登录 */
+.other-login {
+  width: 100%;
+  height: 5.0625rem;
+  position: relative;
+  top: 3.64583333rem;
+  left: 0;
+}
+.other-login .title {
+  padding: 1.52083333rem 0.58333333rem 0;
+}
+.other-login .title .main-content {
+  width: 100%;
+  height: 0.72916667rem;
+  text-align: center;
+  position: relative;
+}
+.other-login .title .main-content span {
+  display: block;
+  width: 4.89583333rem;
+  height: 1px;
+  background: #dddddd;
+  position: absolute;
+  top: 0.28645833rem;
+}
+.other-login .title .main-content .left {
+  left: 0;
+}
+.other-login .title .main-content .right {
+  right: 0;
+}
+.other-login .title .main-content .detail {
+  padding: 0 0.66666667rem;
+  height: 100%;
+  display: inline-block;
+  background: #fff;
+  color: #999999;
+}
+.other-login ul {
+  width: 90%;
+  margin: 0.20833333rem auto 0;
+  height: 2.08333333rem;
+  text-align: center;
+}
+.other-login ul li {
+  display: inline-block;
+  width: 25%;
+}
+.other-login ul li i {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 auto;
+}
+.other-login ul li .qq {
+  background: url('../images/qq.png') no-repeat;
+  background-size: contain;
+}
+.other-login ul li .yfb {
+  background: url('../images/yfb.png') no-repeat;
+  background-size: contain;
+}
+.other-login ul li span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+input[type=password] {
+  border: none;
+  -webkit-appearance: none;
+}

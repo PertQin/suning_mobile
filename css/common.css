@@ -1,0 +1,200 @@
+html {
+  height: 100%;
+  -webkit-user-select: none;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+textarea,
+p,
+th,
+td,
+form,
+i {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100%;
+  min-width: 320px;
+}
+img {
+  display: block;
+  border: none;
+  vertical-align: middle;
+}
+i,
+em,
+strong {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+li {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+q:before,
+q:after {
+  content: '';
+}
+a,
+input,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+a {
+  text-decoration: none;
+}
+input[type="text"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.clear:after {
+  display: block;
+  clear: both;
+  content: ".";
+  visibility: hidden;
+  height: 0px;
+}
+.clear {
+  zoom: 1;
+}
+/*  导航栏 */
+.nav {
+  width: 100%;
+  height: 1.8125rem;
+  border-bottom: 1px solid #dcdcdc;
+  line-height: 1.8125rem;
+  font-size: 0.6rem;
+  position: relative;
+  text-align: center;
+}
+.nav .nav-back {
+  width: 1.66666667rem;
+  position: relative;
+}
+.nav .nav-back:after {
+  content: "";
+  display: inline-block;
+  width: 0.45833333rem;
+  height: 0.45833333rem;
+  border: 1px solid  #353d44;
+  border-width: 1px 0 0 1px;
+  transform: rotate(-45deg);
+  text-align: center;
+}
+.nav .nav-btn-back {
+  display: block;
+  width: 1.5625rem;
+  height: 100%;
+  position: absolute;
+  left: 0.41666667rem;
+  top: 0;
+}
+.nav .nav-theme {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: #333;
+}
+/* 搜索框 */
+.search-wrap {
+  width: 100%;
+  height: 1.83333333rem;
+  background: #f8f8f8;
+  border-bottom: 1px solid  #e2e2e2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 200;
+}
+.search-wrap .back {
+  width: 1.54166667rem;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+.search-wrap .back::after {
+  content: "";
+  display: block;
+  width: 0.52083333rem;
+  height: 0.52083333rem;
+  position: absolute;
+  border-top: 1px solid #353d44;
+  border-left: 1px solid #353d44;
+  left: 0.58333333rem;
+  top: 0.58333333rem;
+  transform: rotate(-45deg);
+}
+.search-wrap .search-bar {
+  padding: 0.29166667rem 0.125rem 0;
+  float: left;
+  position: relative;
+}
+.search-wrap .search-bar input {
+  width: 12.58333333rem;
+  padding-left: 1.125rem;
+  height: 1.22916667rem;
+  border: 1px solid  #cccccc;
+  float: left;
+  border-radius: 0.16666667rem;
+  font-size: 0.52rem;
+  /* 处理placeholder居中问题  */
+  line-height: normal;
+  line-height: 0.70833333rem;
+}
+.search-wrap .search-bar input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #cacaca;
+}
+.search-wrap .search-bar input::-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #cacaca;
+}
+.search-wrap .search-bar input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #cacaca;
+}
+.search-wrap .search-bar input::-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #cacaca;
+}
+.search-wrap .search-bar::after {
+  content: "";
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: url('../images/search-icon3.png') no-repeat;
+  background-size: 0.5rem 0.5rem;
+  position: absolute;
+  left: 0.45833333rem;
+  top: 50%;
+  margin-top: -0.125rem;
+}

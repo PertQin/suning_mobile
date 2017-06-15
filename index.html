@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>苏宁易购移动端</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <script>
+    setRem();
+    window.addEventListener('orientationchange', setRem)
+
+    function setRem() {
+      var html = document.querySelector('html');
+      var width = html.getBoundingClientRect().width;
+      html.style.fontSize = width / 16 + "px";
+    }
+  </script>
+</head>
+
+<body>
+  <div class="su-layout">
+    <!-- 首页头部 -->
+    <header id="header_container">
+      <a href="./category.html" class="categroy"></a>
+      <div class="search_container">
+        <span class="search_logo"></span>
+        <form action="">
+          <input type="text" id="searchInput" value="抢200元无门槛券">
+        </form>
+      </div>
+      <div class="my_cart">
+        <div class="icon"></div>
+      </div>
+    </header>
+    <!-- 首页轮播器 -->
+    <div class="swipe clear">
+      <ul class="swipe-ul">
+        <li>
+          <a href="#">
+            <img src="./images/149585377704540960.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/149605444152384845.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/149424499817115862.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/149424486473349605.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/149424583778727196.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/149429980445974596.jpg" alt="">
+          </a>
+          <li>
+            <a href="#">
+              <img src="./images/149586606114771819.jpg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/149586532410934636.jpg" alt="">
+            </a>
+          </li>
+        </li>
+      </ul>
+      <div class="pager">
+        <ol>
+          <li class="current"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </div>
+    </div>
+    <!-- 首页主体 -->
+    <div id="main">
+      <!-- 首页服务 -->
+      <div class="serve">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="./images/148791919222469465.png" alt="">
+              <div class="img-name">分类</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/148791919828399532.png" alt="">
+              <div class="img-name">大聚会</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/148791920572712753.png" alt="">
+              <div class="img-name">苏宁超市</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/148791921467624705.png" alt="">
+              <div class="img-name">红孩子母婴</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/148791922307021995.png" alt="">
+              <div class="img-name">爆款手机</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/149337023762567771.png" alt="">
+              <div class="img-name">服装城</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/148791923848954611.png" alt="">
+              <div class="img-name">赚钱</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/148905194063362823.png" alt="">
+              <div class="img-name">领云钻</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/148791925669477675.png" alt="">
+              <div class="img-name">身边苏宁</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/148791926471561619.png" alt="">
+              <div class="img-name">优惠券</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- 苏宁头条 -->
+      <div class="toutiao">
+        <div class="title"></div>
+        <div class="line"></div>
+        <div class="content">
+          <ul class="clear">
+            <li>
+              <i></i>
+              <p>周末嗨皮必备&nbsp;精选美食低至8.6元</p>
+            </li>
+            <li>
+              <i></i>
+              <p class="hui">国产大飞机C919成功升空!</p>
+            </li>
+            <li>
+              <i></i>
+              <p>清爽一夏哈哈&nbsp;海南三亚欢迎您</p>
+            </li>
+            <li>
+              <i></i>
+              <p class="hui">史上最热暑期即将来袭</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 掌上秒杀 -->
+      <div class="miaosha clear">
+        <div class="header">
+          <div class="ms_logo"></div>
+          <div class="tag">15点场</div>
+          <div class="ms_time">
+            <div><span></span><span></span></div><i>:</i>
+            <div><span></span><span></span></div><i>:</i>
+            <div class="second"><span></span><span></span></div>
+          </div>
+          <a href="#" class="haohuo">
+            <span>好货超值抢</span>
+            <i class="right"></i>
+          </a>
+        </div>
+        <!-- 滚动轮播 -->
+        <div class="swiper-container">
+          <div class="swiper">
+            <ul>
+              <li>
+                <a href="">
+                  <!-- 大图片 -->
+                  <img src="./images/100035094189502290picA_1.jpg" alt="">
+                  <!-- 图片价格 -->
+                  <div class="img-prices">
+                    <span class="gb-price">¥50.<i class="f0">00</i></span>
+                    <span class="now-price">¥99.00</span>
+                    <span class="discount"><i class="f1">5</i><i class="f2">.</i><i class="f3">6</i><i class="f4">折</i></span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <!-- 大图片 -->
+                  <img src="./images/100038493620590167picA_1.jpg" alt="">
+                  <!-- 图片价格 -->
+                  <div class="img-prices">
+                    <span class="gb-price">¥29.<i class="f0">90</i></span>
+                    <span class="now-price">¥98.00</span>
+                    <span class="discount"><i class="f1">3</i><i class="f2">.</i><i class="f3">1</i><i class="f4">折</i></span>
+                  </div>
+                </a>
+              </li>
+              </li>
+              <li>
+                <a href="">
+                  <!-- 大图片 -->
+                  <img src="./images/100035129164991883picA_1.jpg" alt="">
+                  <!-- 图片价格 -->
+                  <div class="img-prices">
+                    <span class="gb-price">¥169.<i class="f0">00</i></span>
+                    <span class="now-price">¥259.00</span>
+                    <span class="discount"><i class="f1">6</i><i class="f2">.</i><i class="f3">5</i><i class="f4">折</i></span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <!-- 大图片 -->
+                  <img src="./images/100035094189502290picA_1.jpg" alt="">
+                  <!-- 图片价格 -->
+                  <div class="img-prices">
+                    <span class="gb-price">¥50.<i class="f0">00</i></span>
+                    <span class="now-price">¥99.00</span>
+                    <span class="discount"><i class="f1">5</i><i class="f2">.</i><i class="f3">6</i><i class="f4">折</i></span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <!-- 大图片 -->
+                  <img src="./images/100038493620590167picA_1.jpg" alt="">
+                  <!-- 图片价格 -->
+                  <div class="img-prices">
+                    <span class="gb-price">¥29.<i class="f0">90</i></span>
+                    <span class="now-price">¥98.00</span>
+                    <span class="discount"><i class="f1">3</i><i class="f2">.</i><i class="f3">1</i><i class="f4">折</i></span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <!-- 大图片 -->
+                  <img src="./images/100035064609974836picA_1.jpg" alt="">
+                  <!-- 图片价格 -->
+                  <div class="img-prices">
+                    <span class="gb-price">¥79.<i class="f0">00</i></span>
+                    <span class="now-price">¥889.00</span>
+                    <span class="discount"><i class="f1">0</i><i class="f2">.</i><i class="f3">9</i><i class="f4">折</i></span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <!-- 大图片 -->
+                  <img src="./images/100035064609974836picA_1.jpg" alt="">
+                  <!-- 图片价格 -->
+                  <div class="img-prices">
+                    <span class="gb-price">¥79.<i class="f0">00</i></span>
+                    <span class="now-price">¥889.00</span>
+                    <span class="discount"><i class="f1">0</i><i class="f2">.</i><i class="f3">9</i><i class="f4">折</i></span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <!-- 大图片 -->
+                  <img src="./images/100035064609974836picA_1.jpg" alt="">
+                  <!-- 图片价格 -->
+                  <div class="img-prices">
+                    <span class="gb-price">¥79.<i class="f0">00</i></span>
+                    <span class="now-price">¥889.00</span>
+                    <span class="discount"><i class="f1">0</i><i class="f2">.</i><i class="f3">9</i><i class="f4">折</i></span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 广告 -->
+      <a href="#" class="advert">
+        <img src="./images/149433408891838429.jpg" alt="">
+      </a>
+      <!-- 活动 -->
+      <div class="active-floor">
+        <a href="#">
+          <img src="./images/149433411511427754.jpg" alt="">
+        </a>
+        <a href="#">
+          <img src="./images/149433413794235787.jpg" alt="">
+        </a>
+      </div>
+      <div class="active-floor">
+        <a href="#">
+          <img src="./images/149433416597515244.jpg" alt="">
+        </a>
+        <a href="#">
+          <img src="./images/149433418980771812.jpg" alt="">
+        </a>
+      </div>
+      <!-- 超实惠 -->
+      <div class="floor csh">
+        <div class="title">
+          <a href="#"></a>
+        </div>
+        <div class="main-content">
+          <div class="left">
+            <a href="#" class="l">
+              <img class="lazy" data-original="./images/149438038375356022.webp" alt="">
+            </a>
+          </div>
+          <div class="right">
+            <a href="#" class="top-img">
+              <img class="lazy" data-original="./images/149257251347299335.png" alt="">
+            </a>
+            <a href="#" class="bottom-img">
+              <img class="lazy" data-original="./images/149439766544780585.webp" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="surname-content">
+          <div class="surname-left">
+            <a href="#">
+              <img class="lazy" data-original="./images/149432433987059795.webp" alt="">
+            </a>
+          </div>
+          <div class="surname-right">
+            <a href="#">
+              <img class="lazy" data-original="./images/149425125179032555.webp" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 生活家 -->
+      <div class="floor shj">
+        <div class="title">
+          <a href="#"></a>
+        </div>
+        <div class="main-content">
+          <div class="left">
+            <a href="#" class="l">
+              <img class="lazy" data-original="./images/149433204438828737.webp" alt="">
+            </a>
+          </div>
+          <div class="right">
+            <a href="#" class="top-img">
+              <img class="lazy" data-original="./images/149067001393286562.webp" alt="">
+            </a>
+            <a href="#" class="bottom-img">
+              <img class="lazy" data-original="./images/149422389357050818.webp" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="surname-content">
+          <div class="surname-left">
+            <a href="#" class="hasBorder">
+              <img class="lazy" data-original="./images/149429506769141107.png" alt="">
+            </a>
+            <a href="#">
+              <img class="lazy" data-original="./images/149438437382348469.webp" alt="">
+            </a>
+          </div>
+          <div class="surname-right">
+            <a href="#" class="hasBorder">
+              <img class="lazy" data-original="./images/149422729075536198.png" alt="">
+            </a>
+            <a href="#">
+              <img class="lazy" data-original="./images/149422648009314515.webp" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 广告轮播图 -->
+      <div class="advert-swipe-container first-adver-banner">
+        <ul class="swiper">
+          <li>
+            <a href="">
+              <img class="lazy" data-original="./images/149433112035534988.jpg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="lazy" data-original="./images/149593640443995969.jpg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="lazy" data-original="./images/149620181803916321.webp" alt="">
+            </a>
+          </li>
+        </ul>
+        <div class="pager-container">
+          <ul class="pager">
+            <li class="current"></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- 特色好货 -->
+      <div class="floor tshh">
+        <div class="title">
+          <a href="#"></a>
+        </div>
+        <div class="main-content">
+          <div class="left">
+            <a href="#">
+              <img class="lazy" data-original="./images/149438077220949671.webp" alt="">
+            </a>
+          </div>
+          <div class="left r">
+            <a href="#" class="">
+              <img class="lazy" data-original="./images/149438160717843919.webp" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="surname-content">
+          <div class="surname-left hasBorder">
+            <a href="#">
+              <img class="lazy" data-original="./images/149432367487732345.png" alt="">
+            </a>
+          </div>
+          <div class="surname-right hasBorder">
+            <a href="#">
+              <img class="lazy" data-original="./images/149433073397979469.webp" alt="">
+            </a>
+          </div>
+
+          <div class="surname-left">
+            <a href="#">
+              <img class="lazy" data-original="./images/149437903174642224.png" alt="">
+            </a>
+          </div>
+          <div class="surname-right">
+            <a href="#">
+              <img class="lazy" data-original="./images/149424028797726268.webp" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 广告轮播图 -->
+      <div class="advert-swipe-container second-adver-banner">
+        <ul class="swiper">
+          <li>
+            <a href="">
+              <img class="lazy" data-original="./images/149437811451387327.webp" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="lazy" data-original="./images/149620181803916321.webp" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="lazy" data-original="./images/149593640443995969.jpg" alt="">
+            </a>
+          </li>
+        </ul>
+        <div class="pager-container">
+          <ul class="pager">
+            <li class="current"></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- 热门市场 -->
+      <div class="floor rmsc">
+        <div class="title">
+          <a href="#"></a>
+        </div>
+        <div class="main-content">
+          <div class="left">
+            <a href="#">
+              <img class="lazy" data-original="./images/149432368394262281.webp" alt="">
+            </a>
+          </div>
+          <div class="left">
+            <a href="#" class="">
+              <img class="lazy" data-original="./images/149234595241675561.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="surname-content">
+          <div class="serve-list">
+            <ul class="list-container">
+              <li>
+                <a href="#">
+                  <img class="lazy" data-original="./images/149431572379891477.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="lazy" data-original="./images/149431692669621328.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="lazy" data-original="./images/149440218300937365.png" alt="">
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="serve-list">
+            <ul class="list-container">
+              <li>
+                <a href="#">
+                  <img class="lazy" data-original="./images/149432931263392192.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="lazy" data-original="./images/149420948165428428.webp" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="lazy" data-original="./images/149380242972053488.webp" alt="">
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="serve-list">
+            <ul class="list-container">
+              <li>
+                <a href="#">
+                  <img class="lazy" data-original="./images/149429801762641702.webp" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="lazy" data-original="./images/149406782196244865.webp" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="lazy" data-original="./images/149397906168033564.png" alt="">
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 苏宁金融 -->
+      <div class="floor snjr">
+        <div class="title">
+          <a href="#"></a>
+        </div>
+        <div class="main-content">
+          <div class="left">
+            <a href="#" class="l">
+              <img class="lazy" data-original="./images/149429255935354207.webp" alt="">
+            </a>
+          </div>
+          <div class="right">
+            <a href="#" class="top-img">
+              <img class="lazy" data-original="./images/149424182840624888.webp" alt="">
+            </a>
+            <a href="#" class="bottom-img">
+              <img class="lazy" data-original="./images/149432357257085966.webp" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 好店推荐 -->
+      <div class="floor hdtj">
+        <div class="title">
+          <a href="#"></a>
+        </div>
+        <div class="swiper-container">
+          <ul class="swiper-ul">
+            <li>
+              <a href="">
+                <div class="sale-title">
+                  <img class="lazy" data-original="./images/148237162743952468.png" alt="">
+                  <div class="infor">
+                    <span>生活小家电</span>
+                    <span class="desc">选择美好生活</span>
+                  </div>
+                </div>
+                <div class="sale-product">
+                  <div class="left">
+                    <img class="lazy" data-original="./images/0070134065-000000000189464056_1.webp" alt="">
+                  </div>
+                  <div class="right">
+                    <img class="lazy" data-original="./images/0070134065-000000000608063311_1.webp" alt="" class="top-img">
+                    <img class="lazy" data-original="./images/0070134065-000000000143379929_1.webp" alt="">
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div class="sale-title">
+                  <img class="lazy" data-original="./images/148237124096283281.png" alt="">
+                  <div class="infor">
+                    <span>家用电器</span>
+                    <span class="desc">正品保障</span>
+                  </div>
+                </div>
+                <div class="sale-product">
+                  <div class="left">
+                    <img class="lazy" data-original="./images/0070134673-000000000621086670_1.webp" alt="">
+                  </div>
+                  <div class="right">
+                    <img class="lazy" data-original="./images/0070134673-000000000621065230_1.webp" alt="" class="top-img">
+                    <img class="lazy" data-original="./images/0070134673-000000000618165349_1.webp" alt="">
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="sale-title">
+                  <img class="lazy" data-original="./images/148237123109758241.png" alt="">
+                  <div class="infor">
+                    <span>生活小家电</span>
+                    <span class="desc">选择美好生活</span>
+                  </div>
+                </div>
+                <div class="sale-product">
+                  <div class="left">
+                    <img class="lazy" data-original="./images/0070065664-000000000128138491_1.webp" alt="">
+                  </div>
+                  <div class="right">
+                    <img class="lazy" data-original="./images/0070065664-000000000121428938_1.webp" alt="" class="top-img">
+                    <img class="lazy" data-original="./images/0070065664-000000000143385988_1.webp" alt="">
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div class="sale-title">
+                  <img class="lazy" data-original="./images/148237124096283281.png" alt="">
+                  <div class="infor">
+                    <span>家用电器</span>
+                    <span class="desc">正品保障</span>
+                  </div>
+                </div>
+                <div class="sale-product">
+                  <div class="left">
+                    <img class="lazy" data-original="./images/0070138707-000000000153384522_1.webp" alt="">
+                  </div>
+                  <div class="right">
+                    <img class="lazy" data-original="./images/0070138707-000000000162455242_1.webp" alt="" class="top-img">
+                    <img class="lazy" data-original="./images/0070138707-000000000155576554_1.webp" alt="">
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="sale-title">
+                  <img class="lazy" data-original="./images/148237162743952468.png" alt="">
+                  <div class="infor">
+                    <span>生活小家电</span>
+                    <span class="desc">选择美好生活</span>
+                  </div>
+                </div>
+                <div class="sale-product">
+                  <div class="left">
+                    <img class="lazy" data-original="./images/0070134065-000000000189464056_1.webp" alt="">
+                  </div>
+                  <div class="right">
+                    <img class="lazy" data-original="./images/0070134065-000000000608063311_1.webp" alt="" class="top-img">
+                    <img class="lazy" data-original="./images/0070134065-000000000143379929_1.webp" alt="">
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div class="sale-title">
+                  <img class="lazy" data-original="./images/148237124096283281.png" alt="">
+                  <div class="infor">
+                    <span>家用电器</span>
+                    <span class="desc">正品保障</span>
+                  </div>
+                </div>
+                <div class="sale-product">
+                  <div class="left">
+                    <img class="lazy" data-original="./images/0070134673-000000000621086670_1.webp" alt="">
+                  </div>
+                  <div class="right">
+                    <img class="lazy" data-original="./images/0070134673-000000000621065230_1.webp" alt="" class="top-img">
+                    <img class="lazy" data-original="./images/0070134673-000000000618165349_1.webp" alt="">
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <ul class="pager-ul">
+            <li class="current"></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!-- 为你推荐 -->
+      <div class="wntj" style="background-color:#fabc09;">
+        <div class="item-title">为你推荐</div>
+        <div class="content clear">
+          <a href="#">
+            <span class="title">四季如春</span>
+            <img class="lazy" data-original="./images/0000000000-000000000142933636_1.webp" alt="">
+            <span class="desc">舒适随心控</span>
+          </a>
+          <a href="#">
+            <span class="title">热恋零食</span>
+            <img class="lazy" data-original="./images/0000000000-000000000125298846_1.webp" alt="">
+            <span class="desc">美味不能停</span>
+          </a>
+          <a href="#">
+            <span class="title">奶粉清单</span>
+            <img class="lazy" data-original="./images/0070089715-000000000121628772_1.webp" alt="">
+            <span class="desc">身体倍儿棒</span>
+          </a>
+          </a>
+          <a href="#">
+            <span class="title">每天一杯奶</span>
+            <img class="lazy" data-original="./images/0070127674-000000000173242060_1.webp" alt="">
+            <span class="desc">强壮中国人</span>
+          </a>
+        </div>
+        <div class="gap"></div>
+        <div class="content clear">
+          <a href="#">
+            <span class="title">四季如春</span>
+            <img class="lazy" data-original="./images/0000000000-000000000142933636_1.webp" alt="">
+            <span class="desc">舒适随心控</span>
+            <div class="gap"></div>
+          </a>
+          <a href="#">
+            <span class="title">四季如春</span>
+            <img class="lazy" data-original="./images/0000000000-000000000142933636_1.webp" alt="">
+            <span class="desc">舒适随心控</span>
+          </a>
+          <a href="#">
+            <span class="title">四季如春</span>
+            <img class="lazy" data-original="./images/0000000000-000000000142933636_1.webp" alt="">
+            <span class="desc">舒适随心控</span>
+          </a>
+          </a>
+          <a href="#">
+            <span class="title">四季如春</span>
+            <img class="lazy" data-original="./images/0000000000-000000000142933636_1.webp" alt="">
+            <span class="desc">舒适随心控</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 猜你喜欢 -->
+      <div class="cnxh">
+        <div class="title">
+          <span class="cai-icon"></span>猜你喜欢
+        </div>
+      </div>
+      <!-- 登录推荐 -->
+      <a href="javascript:;" class="guessbtn">
+                    登录后给您专属推荐>>
+                </a>
+
+      <!-- 猜你喜欢详情 -->
+      <div class="cnxh-detail clear">
+        <ul class="pro-list">
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000152287072_1.webp" alt="">
+              <span>大聚会</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">御泥坊沁润透亮补水矿物面膜套装（玫瑰鲜润7片+竹翠爽...</div>
+              <span class="price">¥59.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000169522298_1.webp" alt="">
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">美的(Midea)WHJ1705b家用 烧水壶 304不锈钢 电烧水瓶 </div>
+              <span class="price">¥89.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000102627729_1.webp" alt="">
+              <span class="manjian">满减</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">【苏宁易购超市】蓝月亮深层洁净护理洗衣液(薰衣草)500g</div>
+              <span class="price">¥9.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0070095891-000000000177208743_1.webp" alt="">
+              <span class="sjzx">手机专享</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">MayCreate 经典女士淡香水四件套装礼盒 持久淡香清新正品</div>
+              <span class="price">¥39.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000152287072_1.webp" alt="">
+              <span>大聚会</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">御泥坊沁润透亮补水矿物面膜套装（玫瑰鲜润7片+竹翠爽...</div>
+              <span class="price">¥59.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000169522298_1.webp" alt="">
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">美的(Midea)WHJ1705b家用 烧水壶 304不锈钢 电烧水瓶 </div>
+              <span class="price">¥89.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000102627729_1.webp" alt="">
+              <span class="manjian">满减</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">【苏宁易购超市】蓝月亮深层洁净护理洗衣液(薰衣草)500g</div>
+              <span class="price">¥9.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0070095891-000000000177208743_1.webp" alt="">
+              <span class="sjzx">手机专享</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">MayCreate 经典女士淡香水四件套装礼盒 持久淡香清新正品</div>
+              <span class="price">¥39.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000152287072_1.webp" alt="">
+              <span>大聚会</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">御泥坊沁润透亮补水矿物面膜套装（玫瑰鲜润7片+竹翠爽...</div>
+              <span class="price">¥59.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000169522298_1.webp" alt="">
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">美的(Midea)WHJ1705b家用 烧水壶 304不锈钢 电烧水瓶 </div>
+              <span class="price">¥89.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000102627729_1.webp" alt="">
+              <span class="manjian">满减</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">【苏宁易购超市】蓝月亮深层洁净护理洗衣液(薰衣草)500g</div>
+              <span class="price">¥9.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0070095891-000000000177208743_1.webp" alt="">
+              <span class="sjzx">手机专享</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">MayCreate 经典女士淡香水四件套装礼盒 持久淡香清新正品</div>
+              <span class="price">¥39.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000152287072_1.webp" alt="">
+              <span>大聚会</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">御泥坊沁润透亮补水矿物面膜套装（玫瑰鲜润7片+竹翠爽...</div>
+              <span class="price">¥59.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000169522298_1.webp" alt="">
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">美的(Midea)WHJ1705b家用 烧水壶 304不锈钢 电烧水瓶 </div>
+              <span class="price">¥89.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000102627729_1.webp" alt="">
+              <span class="manjian">满减</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">【苏宁易购超市】蓝月亮深层洁净护理洗衣液(薰衣草)500g</div>
+              <span class="price">¥9.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0070095891-000000000177208743_1.webp" alt="">
+              <span class="sjzx">手机专享</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">MayCreate 经典女士淡香水四件套装礼盒 持久淡香清新正品</div>
+              <span class="price">¥39.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000152287072_1.webp" alt="">
+              <span>大聚会</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">御泥坊沁润透亮补水矿物面膜套装（玫瑰鲜润7片+竹翠爽...</div>
+              <span class="price">¥59.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000169522298_1.webp" alt="">
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">美的(Midea)WHJ1705b家用 烧水壶 304不锈钢 电烧水瓶 </div>
+              <span class="price">¥89.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000102627729_1.webp" alt="">
+              <span class="manjian">满减</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">【苏宁易购超市】蓝月亮深层洁净护理洗衣液(薰衣草)500g</div>
+              <span class="price">¥9.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0070095891-000000000177208743_1.webp" alt="">
+              <span class="sjzx">手机专享</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">MayCreate 经典女士淡香水四件套装礼盒 持久淡香清新正品</div>
+              <span class="price">¥39.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000152287072_1.webp" alt="">
+              <span>大聚会</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">御泥坊沁润透亮补水矿物面膜套装（玫瑰鲜润7片+竹翠爽...</div>
+              <span class="price">¥59.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000169522298_1.webp" alt="">
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">美的(Midea)WHJ1705b家用 烧水壶 304不锈钢 电烧水瓶 </div>
+              <span class="price">¥89.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000102627729_1.webp" alt="">
+              <span class="manjian">满减</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">【苏宁易购超市】蓝月亮深层洁净护理洗衣液(薰衣草)500g</div>
+              <span class="price">¥9.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0070095891-000000000177208743_1.webp" alt="">
+              <span class="sjzx">手机专享</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">MayCreate 经典女士淡香水四件套装礼盒 持久淡香清新正品</div>
+              <span class="price">¥39.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000152287072_1.webp" alt="">
+              <span>大聚会</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">御泥坊沁润透亮补水矿物面膜套装（玫瑰鲜润7片+竹翠爽...</div>
+              <span class="price">¥59.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000169522298_1.webp" alt="">
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">美的(Midea)WHJ1705b家用 烧水壶 304不锈钢 电烧水瓶 </div>
+              <span class="price">¥89.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000102627729_1.webp" alt="">
+              <span class="manjian">满减</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">【苏宁易购超市】蓝月亮深层洁净护理洗衣液(薰衣草)500g</div>
+              <span class="price">¥9.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0070095891-000000000177208743_1.webp" alt="">
+              <span class="sjzx">手机专享</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">MayCreate 经典女士淡香水四件套装礼盒 持久淡香清新正品</div>
+              <span class="price">¥39.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000152287072_1.webp" alt="">
+              <span>大聚会</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">御泥坊沁润透亮补水矿物面膜套装（玫瑰鲜润7片+竹翠爽...</div>
+              <span class="price">¥59.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000169522298_1.webp" alt="">
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">美的(Midea)WHJ1705b家用 烧水壶 304不锈钢 电烧水瓶 </div>
+              <span class="price">¥89.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000102627729_1.webp" alt="">
+              <span class="manjian">满减</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">【苏宁易购超市】蓝月亮深层洁净护理洗衣液(薰衣草)500g</div>
+              <span class="price">¥9.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0070095891-000000000177208743_1.webp" alt="">
+              <span class="sjzx">手机专享</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">MayCreate 经典女士淡香水四件套装礼盒 持久淡香清新正品</div>
+              <span class="price">¥39.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000152287072_1.webp" alt="">
+              <span>大聚会</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">御泥坊沁润透亮补水矿物面膜套装（玫瑰鲜润7片+竹翠爽...</div>
+              <span class="price">¥59.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000169522298_1.webp" alt="">
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">美的(Midea)WHJ1705b家用 烧水壶 304不锈钢 电烧水瓶 </div>
+              <span class="price">¥89.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0000000000-000000000102627729_1.webp" alt="">
+              <span class="manjian">满减</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">【苏宁易购超市】蓝月亮深层洁净护理洗衣液(薰衣草)500g</div>
+              <span class="price">¥9.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+          <li class="pro-item">
+            <a href="#">
+              <img class="lazy" data-original="./images/0070095891-000000000177208743_1.webp" alt="">
+              <span class="sjzx">手机专享</span>
+            </a>
+            <div class="infor-bar">
+              <div class="pro-title">MayCreate 经典女士淡香水四件套装礼盒 持久淡香清新正品</div>
+              <span class="price">¥39.90</span>
+            </div>
+            <a href="#" class="like">找相似</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- App下载 -->
+      <div class="app-down">
+        <a href="#">
+          <img class="lazy" data-original="./images/147089924753953251.webp" alt="">
+        </a>
+      </div>
+
+      <!-- app-gap -->
+      <div class="app-gap"></div>
+    </div>
+
+    <!-- 首页底部 -->
+    <footer class="footer">
+      <ul class="wbox">
+        <li>
+          <a href="#">登录</a>
+        </li>
+        <li>
+          <a href="#">注册</a>
+        </li>
+        <li>
+          <a href="#">电脑版</a>
+        </li>
+        <li>
+          <a href="#">普通版</a>
+        </li>
+        <li>
+          <a href="#">客户端</a>
+        </li>
+      </ul>
+    </footer>
+
+    <!-- 版权 -->
+    <div class="Copyright"> Copyright © 2002 - 2017 苏宁 suning.com 版权所有 </div>
+
+    <!-- 导航tab栏 -->
+    <div class="dots-tab">
+      <a href="#">
+        <img src="./images/148836121131341957.png" alt="">
+        <span class="cur">首页</span>
+      </a>
+      <a href="#">
+        <img src="./images/148836122075675743.png" alt="">
+        <span>分类</span>
+      </a>
+      <a href="#">
+        <img src="./images/149139198113377103.png" alt="">
+        <span>热销榜</span>
+      </a>
+      <a href="#">
+        <img src="./images/148836123833038769.png" alt="">
+        <span>我的易购</span>
+      </a>
+      <a href="#">
+        <img src="./images/148836126450627536.png" alt="">
+        <span>新人大礼包</span>
+      </a>
+    </div>
+  </div>
+
+  <div id="Top" style="display:none;"></div>
+
+  <script type="text/javascript" src="./lib/webpjs-0.0.2.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="./lib/zepto/dist/zepto.js"></script>
+  <script src="./lib/zepto/src/fx.js"></script>
+  <script src="./lib/zepto/src/touch.js"></script>
+  <script src="./lib/jieyou_lazyload/lazyload.min.js"></script>
+  <script>
+    $(function () {
+      $("img.lazy").lazyload({
+        /* 提前300px加载图片 替换掉占位图片 */
+        threshold: 350,
+        /* 滚动一开始,就循环图片  */
+        failure_limit: 20,
+        /* 图片淡入 */
+        effect: "fadeIn",
+        /* 只对垂直滚动有效  */
+        vertical_only: true,
+        /* 替换原来的占位图片  */
+        placeholder_data_img: './images/load.png'
+      });
+
+      $('body').height($('.su-layout').height());
+      $(window).scroll(function () {
+        var height = $(window).scrollTop();
+        if (height > 638) {
+          $('#Top').show();
+        } else {
+          $('#Top').hide();
+        }
+      })
+      function goTop(acceleration, time) {
+        acceleration = acceleration || 0.1;
+        var x1 = 0;
+        var y1 = 0;
+        var x2 = 0;
+        var y2 = 0;
+        var x3 = 0;
+        var y3 = 0;
+        if (document.documentElement) {
+          x1 = document.documentElement.scrollLeft || 0;
+          y1 = document.documentElement.scrollTop || 0;
+        }
+        if (document.body) {
+          x2 = document.body.scrollLeft || 0;
+          y2 = document.body.scrollTop || 0;
+        }
+        var x3 = window.scrollX || 0;
+        var y3 = window.scrollY || 0;
+        // 滚动条到页面顶部的水平距离
+        var x = Math.max(x1, Math.max(x2, x3));
+        // 滚动条到页面顶部的垂直距离
+        var y = Math.max(y1, Math.max(y2, y3));
+        // 滚动距离 = 目前距离 / 速度, 因为距离原来越小, 速度是大于 1 的数, 所以滚动距离会越来越小
+        var speed = 1 + acceleration;
+        window.scrollTo(Math.floor(x / speed), Math.floor(y / speed));
+        if (x > 0 || y > 0) {
+          return setTimeout(goTop,16);
+        }
+      }
+      
+     window.QS = {};
+      /* 封装tap事件 */
+      QS.tap = function(dom,callback){
+        if(dom && typeof(dom) == 'object'){
+          var isMove = false;
+          var startTime = 0;
+          dom.addEventListener('touchstart',function(e){
+            /* 记录当前的时间 */
+            startTime = Date.now();
+          });
+          dom.addEventListener('touchmove',function(e){
+            /* 是否滑动*/
+            isMove  = true;
+            // console.log('tocuhmove');
+          });
+          dom.addEventListener('touchend',function(e){
+            /* 判读 有没有达到tap事件的要求   */
+            /* 
+            要求 ：  
+                没有触发 touchmove事件
+                并且响应速度要比click快
+            */
+            if(!isMove && (Date.now()-startTime) < 150){
+              callback && callback(e);
+            }
+            // console.log(Date.now()-startTime);
+            /* 重置参数 */
+            isMove = false;
+            startTime = 0;
+          });
+
+        }
+      }
+
+      var Top = document.getElementById('Top');
+      QS.tap(Top,function(){
+        goTop();
+      });
+
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "jieyou_lazyload",
+  "main": "lazyload.js",
+  "version": "1.4.2",
+  "homepage": "https://github.com/jieyou/lazyload",
+  "authors": [
+    "jieyou <qinjieyou@foxmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "1.4.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.4.2",
+    "commit": "2de2da307bbb1507039aefb3e9fc596379764b8d"
+  },
+  "_source": "https://github.com/jieyou/lazyload.git",
+  "_target": "^1.4.2",
+  "_originalSource": "jieyou_lazyload",
+  "_direct": true
+}

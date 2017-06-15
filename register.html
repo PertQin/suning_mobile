@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>注册</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+   <div class="main">
+        <!-- 页面主题:登录 -->
+        <div class="nav">
+            <div class="nav-back">
+               <a href="#" class="nav-btn-back" onclick="history.back(-1)"></a>
+            </div>
+            <div class="nav-theme">
+                手机快速注册
+            </div>
+        </div>
+        <form action="" class="submit">
+            <div class="username-box comStyle">
+                <label class="title">手机号码</label>
+                <input id="username" class="mainInput" type="text" name="username" placeholder="请输入11位手机号码">
+                <span class="error_username">手机号码不能为空</span>
+            </div>
+            <div class="verificat comStyle">
+                <label class="title">手机验证码</label>
+                <input class="mainInput verificat-code" type="text" placeholder="请输入手机验证码">
+                <input type="button" class="getCode" value="获取验证码">
+                <span class="error_code">请输入验证码</span>
+            </div>
+            <div class="password-box comStyle">
+                <label class="title">设置密码</label>
+                <input id="password" class="mainInput" type="password" placeholder="6到20位数字+字母或符号">
+                <span class="error_password">手机号码不能为空</span>
+            </div>
+            <div class="agreement">
+                <input type="checkbox" checked="checked" id="allow">
+                <span class="agree">同意</span>
+                <span class="book">《苏宁易购会员章程》和《易付宝协议》</span>
+                <span class="allow_tip">请勾选同意!</span>
+            </div>
+            <input class="regeister" type="button" value="提交注册">
+        </form>
+   </div>
+
+
+   <script src="./lib/zepto/dist/zepto.min.js"></script>
+   <script src="./lib/zepto/src/touch.js"></script>
+   <script src="./js/register.js"></script>
+</body>
+</html>

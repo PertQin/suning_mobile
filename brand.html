@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>品牌页</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/brand.css">
+  <script>
+  // 横竖屏监听
+  setRem();
+  window.addEventListener('orientationchange',setRem)
+  function setRem(){
+    var html = document.querySelector('html');
+    var width = html.getBoundingClientRect().width;
+    html.style.fontSize = width /16+"px";
+    console.log(html.style.fontSize);
+  }
+  </script>
+</head>
+<body>
+      <div class="su-layout">
+            <!-- 搜索框 -->
+            <section class="search-wrap">
+                <section class="back" onclick="history.back(-1)"></section>
+                <section class="search-bar">
+                  <input type="text" value placeholder="请输入你想找的商品">
+                </section>
+                <a href="#" class="sx">筛选</a>
+            </section>
+
+            <div id="wrapper">
+                <div class="reslut-wrap">
+                    <!-- 综合分类 -->
+                    <div class="zhfl">
+                        <ul>
+                          <li class="cur">
+                            <i class="zh">综合</i>
+                          </li>
+                          <li>
+                            <i>销量</i>
+                          </li>
+                          <li class="cur">
+                            <i class="gouxuan">苏宁服务</i>
+                          </li>
+                          <li>
+                            <i class="gouxuan">促销</i>
+                          </li>
+                        </ul>
+                    </div>
+                    <!-- 商品展示 -->
+                    <div class="pro-show clear">
+                        <ul>
+                          <li>
+                            <a href="pro-detail.html">
+                                <div class="img">
+                                  <img src="./images/0000000000-000000000619981933_1.jpg" alt="">
+                                  <div class="yuding">
+                            
+                                  </div>
+                                </div>
+                                <div class="desc">
+                                  <p class="name"><i class="product-label">自营</i>Apple iPhone 7 Plus 128GB 黑色 移动联通4G手机</p>
+                                  <p class="infor-label">
+                                      <i>4G双网通</i>
+                                      <i>绚丽显示屏</i>
+                                      <i>5.5英寸</i>
+                                  </p>
+                                  <div class="price">
+                                    <p class="price-box">
+                                        <span class="price-txt">
+                                            ¥ <strong>6288</strong>.00
+                                        </span>
+                                        <span class="product-label">定金团</span>
+
+                                    </p>
+                                      <p class="shop-num">
+                                        <i>评价55条</i>
+                                        <i>好评率94%</i>
+                                      </p>
+                                      <p class="sale">
+                                        苏宁门店有现货
+                                      </p>
+                                  </div>
+                                </div>
+                            </a>
+                          </li>
+                            <li>
+                            <a href="#">
+                                <div class="img">
+                                  <img src="./images/0000000000-000000000619981933_1.jpg" alt="">
+                                </div>
+                                <div class="desc">
+                                  <p class="name"><i class="product-label">自营</i>Apple iPhone 7 Plus 128GB 黑色 移动联通4G手机</p>
+                                  <p class="infor-label">
+                                      <i>4G双网通</i>
+                                      <i>绚丽显示屏</i>
+                                      <i>5.5英寸</i>
+                                  </p>
+                                  <div class="price">
+                                    <p class="price-box">
+                                        <span class="price-txt">
+                                            ¥ <strong>6288</strong>.00
+                                        </span>
+                                        <span class="product-label">定金团</span>
+
+                                    </p>
+                                      <p class="shop-num">
+                                        <i>评价55条</i>
+                                        <i>好评率94%</i>
+                                      </p>
+                                      <p class="sale">
+                                        苏宁门店有现货
+                                      </p>
+                                  </div>
+                                </div>
+                            </a>
+                          </li>
+                            <li>
+                            <a href="#">
+                                <div class="img">
+                                  <img src="./images/0000000000-000000000619981933_1.jpg" alt="">
+                                </div>
+                                <div class="desc">
+                                  <p class="name"><i class="product-label">自营</i>Apple iPhone 7 Plus 128GB 黑色 移动联通4G手机</p>
+                                  <p class="infor-label">
+                                      <i>4G双网通</i>
+                                      <i>绚丽显示屏</i>
+                                      <i>5.5英寸</i>
+                                  </p>
+                                  <div class="price">
+                                    <p class="price-box">
+                                        <span class="price-txt">
+                                            ¥ <strong>6288</strong>.00
+                                        </span>
+                                        <span class="product-label">定金团</span>
+
+                                    </p>
+                                      <p class="shop-num">
+                                        <i>评价55条</i>
+                                        <i>好评率94%</i>
+                                      </p>
+                                      <p class="sale">
+                                        苏宁门店有现货
+                                      </p>
+                                  </div>
+                                </div>
+                            </a>
+                          </li>
+                            <li>
+                            <a href="#">
+                                <div class="img">
+                                  <img src="./images/0000000000-000000000619981933_1.jpg" alt="">
+                                </div>
+                                <div class="desc">
+                                  <p class="name"><i class="product-label">自营</i>Apple iPhone 7 Plus 128GB 黑色 移动联通4G手机</p>
+                                  <p class="infor-label">
+                                      <i>4G双网通</i>
+                                      <i>绚丽显示屏</i>
+                                      <i>5.5英寸</i>
+                                  </p>
+                                  <div class="price">
+                                    <p class="price-box">
+                                        <span class="price-txt">
+                                            ¥ <strong>6288</strong>.00
+                                        </span>
+                                        <span class="product-label">定金团</span>
+
+                                    </p>
+                                      <p class="shop-num">
+                                        <i>评价55条</i>
+                                        <i>好评率94%</i>
+                                      </p>
+                                      <p class="sale">
+                                        苏宁门店有现货
+                                      </p>
+                                  </div>
+                                </div>
+                            </a>
+                          </li>
+                            <li>
+                            <a href="#">
+                                <div class="img">
+                                  <img src="./images/0000000000-000000000619981933_1.jpg" alt="">
+                                </div>
+                                <div class="desc">
+                                  <p class="name"><i class="product-label">自营</i>Apple iPhone 7 Plus 128GB 黑色 移动联通4G手机</p>
+                                  <p class="infor-label">
+                                      <i>4G双网通</i>
+                                      <i>绚丽显示屏</i>
+                                      <i>5.5英寸</i>
+                                  </p>
+                                  <div class="price">
+                                    <p class="price-box">
+                                        <span class="price-txt">
+                                            ¥ <strong>6288</strong>.00
+                                        </span>
+                                        <span class="product-label">定金团</span>
+
+                                    </p>
+                                      <p class="shop-num">
+                                        <i>评价55条</i>
+                                        <i>好评率94%</i>
+                                      </p>
+                                      <p class="sale">
+                                        苏宁门店有现货
+                                      </p>
+                                  </div>
+                                </div>
+                            </a>
+                          </li>
+                            <li>
+                            <a href="#">
+                                <div class="img">
+                                  <img src="./images/0000000000-000000000619981933_1.jpg" alt="">
+                                </div>
+                                <div class="desc">
+                                  <p class="name"><i class="product-label">自营</i>Apple iPhone 7 Plus 128GB 黑色 移动联通4G手机</p>
+                                  <p class="infor-label">
+                                      <i>4G双网通</i>
+                                      <i>绚丽显示屏</i>
+                                      <i>5.5英寸</i>
+                                  </p>
+                                  <div class="price">
+                                    <p class="price-box">
+                                        <span class="price-txt">
+                                            ¥ <strong>6288</strong>.00
+                                        </span>
+                                        <span class="product-label">定金团</span>
+
+                                    </p>
+                                      <p class="shop-num">
+                                        <i>评价55条</i>
+                                        <i>好评率94%</i>
+                                      </p>
+                                      <p class="sale">
+                                        苏宁门店有现货
+                                      </p>
+                                  </div>
+                                </div>
+                            </a>
+                          </li>
+                            <li>
+                            <a href="#">
+                                <div class="img">
+                                  <img src="./images/0000000000-000000000619981933_1.jpg" alt="">
+                                </div>
+                                <div class="desc">
+                                  <p class="name"><i class="product-label">自营</i>Apple iPhone 7 Plus 128GB 黑色 移动联通4G手机</p>
+                                  <p class="infor-label">
+                                      <i>4G双网通</i>
+                                      <i>绚丽显示屏</i>
+                                      <i>5.5英寸</i>
+                                  </p>
+                                  <div class="price">
+                                    <p class="price-box">
+                                        <span class="price-txt">
+                                            ¥ <strong>6288</strong>.00
+                                        </span>
+                                        <span class="product-label">定金团</span>
+
+                                    </p>
+                                      <p class="shop-num">
+                                        <i>评价55条</i>
+                                        <i>好评率94%</i>
+                                      </p>
+                                      <p class="sale">
+                                        苏宁门店有现货
+                                      </p>
+                                  </div>
+                                </div>
+                            </a>
+                          </li>
+                        </ul>
+                    </div>
+                    <!-- 上拉刷新提示 -->
+                    <div id="pullUp">
+                        <span class="pullUpIcon"></span>
+                        <span class="pullUpLabel">亲,上拉加载更多哦...</span>
+                    </div>
+               </div>
+            </div> 
+
+            <!-- 底部导航-->
+            <section class="sn_hy"> 
+                苏宁欢迎你！
+            </section>
+    </div>
+ 
+</body>
+</html>
+
+<script src="./lib/iscroll.js"></script>
+<script src="./lib/iscroll-probe.js"></script>
+<script src="./lib/zepto/dist/zepto.js"></script>
+<script src="./js/brand.js"></script>
